@@ -1,0 +1,33 @@
+{
+    "name": "@firestead/firebase-nuxt",
+    "description": "Firebase Module for Nuxt3",
+    "repository": "firestead/firebase-nuxt",
+    "keywords": [
+        "nuxt",
+        "nuxt-module",
+        "firestead",
+        "firebase"
+    ],
+    "version": "0.0.1",
+    "type": "module",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "prepack": "unbuild"
+    },
+    "exports": {
+        ".": "./dist/index.mjs",
+        "./package.json": "./package.json"
+    },
+    "dependencies": {
+        "@nuxt/kit": "latest",
+        "firebase": "^9.8.1",
+        "firebase-admin": "^10.2.0",
+        "pathe": "^0.3.0"
+    },
+    "devDependencies": {
+        "unbuild": "latest"
+    }
+}
